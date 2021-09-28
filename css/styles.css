@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*!
 * Start Bootstrap - Resume v7.0.3 (https://startbootstrap.com/theme/resume)
 * Copyright 2013-2021 Start Bootstrap
@@ -10,6 +10,38 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+/*image over*/
+
+
+    .imgBox:hover {
+        -moz-box-shadow: 0 0 10px #ccc;
+        -webkit-box-shadow: 0 0 10px #ccc;
+        box-shadow: 0 0 10px #ccc;
+    }
+
+/*Modal*/
+.bs-example {
+    margin: 20px;
+}
+ 
+/* button side by side for projects*/
+.cta-btn {
+    display: inline-block;
+    position: relative;
+    margin-top: 15px;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 1;
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+}
+
+.text-color-main {
+    background-image: linear-gradient( 135deg,#ee0979,#ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -7023,8 +7055,12 @@ textarea.form-control-lg {
   flex-grow: 1 !important;
 }
 
+.flex-size {
+    margin-left: 50px;
+}
+
 .flex-shrink-0 {
-  flex-shrink: 0 !important;
+    flex-shrink: 0.4 !important;
 }
 
 .flex-shrink-1 {
